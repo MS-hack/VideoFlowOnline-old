@@ -16,11 +16,7 @@ refer to https://daisyui.com/
 
 
 # demos
-## chrome extension demo
-![image](images/chrome_ext.png)
-
-## web app demo
-![image](images/web_app.png)
+![image](images/cat_connect.png)
 
 # Getting Started with Create React App
 
