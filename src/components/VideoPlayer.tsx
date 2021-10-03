@@ -2,8 +2,11 @@ import * as React from "react";
 import { render } from "react-dom";
 import Hls from "hls.js";
 
+interface Props {
+  url: string
+}
 
-function VideoPlayer() {
+function VideoPlayer(props: Props) {
     const [hls, setHls] = React.useState(new Hls());
     const videoEl = React.useRef(null);
   
@@ -12,7 +15,7 @@ function VideoPlayer() {
         hls.attachMedia(videoEl.current);
         hls.on(Hls.Events.MEDIA_ATTACHED, () => {
           hls.loadSource(
-            "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
+            props.url
           );
         });
       }
