@@ -1,6 +1,6 @@
 {
-  "name": "chrome-react-seo-extension",
-  "version": "0.1.2",
+  "name": "VideoFlowOnline",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.3.0",
